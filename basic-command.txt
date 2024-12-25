@@ -1,0 +1,13 @@
+show databases;
+use employees;
+show tables;
+
+select * from employees;
+select count(emp_no) as total_employe from employees;
+select count(emp_no)  as total_male_employe from employees where gender = 'M';
+select count(emp_no)  as total_female_employe from employees where gender = 'F';
+select * from employees where hire_date between '1990-01-01' and '1990-12-31';
+select count(emp_no) from employees where hire_date between '1990-01-01' and '1990-01-31';
+
+
+
